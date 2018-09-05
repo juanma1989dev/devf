@@ -1,6 +1,6 @@
 <?php
 
-$address = 'avenida+gustavo+paiva,maceio,alagoas,brasil';
+$address = 'roma+norte';
 
     $geocode = file_get_contents('http://maps.google.com/maps/api/geocode/json?address='.$address.'&sensor=false');
 
