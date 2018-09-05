@@ -14,4 +14,9 @@ $address = 'avenida+gustavo+paiva,maceio,alagoas,brasil';
 
     echo "User Agent :: {$_SERVER['HTTP_USER_AGENT']}";
 
+    $new_arr[]= unserialize(file_get_contents('http://www.geoplugin.net/php.gp?ip='.$_SERVER['REMOTE_ADDR']));
+    echo "Latitude:".$new_arr[0]['geoplugin_latitude']." and Longitude:".$new_arr[0]['geoplugin_longitude'];
+
+
+
 ?>
